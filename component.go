@@ -18,7 +18,7 @@ type ComponentFull struct {
 	CreatedAt       *string `json:"created_at"`
 	UpdatedAt       *string `json:"updated_at"`
 	AutomationEmail *string `json:"automation_email"`
-	StartDate       *string `json:"start_date,omitempty"`
+	StartDate       *string `json:"start_date"`
 }
 
 func CreateComponent(client *Client, pageID string, component *Component) (*ComponentFull, error) {
